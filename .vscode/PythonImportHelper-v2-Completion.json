@@ -1,0 +1,648 @@
+[
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "default_description",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "default_description",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "default_description",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "default_description",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline_to_binary",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "default_description",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "default_description",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "default_description",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "default_description",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "publish_cmdline",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "default_description",
+        "importPath": "docutils.core",
+        "description": "docutils.core",
+        "isExtraImport": true,
+        "detail": "docutils.core",
+        "documentation": {}
+    },
+    {
+        "label": "locale",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "locale",
+        "description": "locale",
+        "detail": "locale",
+        "documentation": {}
+    },
+    {
+        "label": "manpage",
+        "importPath": "docutils.writers",
+        "description": "docutils.writers",
+        "isExtraImport": true,
+        "detail": "docutils.writers",
+        "documentation": {}
+    },
+    {
+        "label": "Writer",
+        "importPath": "docutils.writers.odf_odt",
+        "description": "docutils.writers.odf_odt",
+        "isExtraImport": true,
+        "detail": "docutils.writers.odf_odt",
+        "documentation": {}
+    },
+    {
+        "label": "Reader",
+        "importPath": "docutils.writers.odf_odt",
+        "description": "docutils.writers.odf_odt",
+        "isExtraImport": true,
+        "detail": "docutils.writers.odf_odt",
+        "documentation": {}
+    },
+    {
+        "label": "prepstyles",
+        "importPath": "docutils.writers.odf_odt",
+        "description": "docutils.writers.odf_odt",
+        "isExtraImport": true,
+        "detail": "docutils.writers.odf_odt",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Room",
+        "importPath": "rentomatic.domain.room",
+        "description": "rentomatic.domain.room",
+        "isExtraImport": true,
+        "detail": "rentomatic.domain.room",
+        "documentation": {}
+    },
+    {
+        "label": "Room",
+        "importPath": "rentomatic.domain.room",
+        "description": "rentomatic.domain.room",
+        "isExtraImport": true,
+        "detail": "rentomatic.domain.room",
+        "documentation": {}
+    },
+    {
+        "label": "Room",
+        "importPath": "rentomatic.domain.room",
+        "description": "rentomatic.domain.room",
+        "isExtraImport": true,
+        "detail": "rentomatic.domain.room",
+        "documentation": {}
+    },
+    {
+        "label": "Room",
+        "importPath": "rentomatic.domain.room",
+        "description": "rentomatic.domain.room",
+        "isExtraImport": true,
+        "detail": "rentomatic.domain.room",
+        "documentation": {}
+    },
+    {
+        "label": "Room",
+        "importPath": "rentomatic.domain.room",
+        "description": "rentomatic.domain.room",
+        "isExtraImport": true,
+        "detail": "rentomatic.domain.room",
+        "documentation": {}
+    },
+    {
+        "label": "Room",
+        "importPath": "rentomatic.domain.room",
+        "description": "rentomatic.domain.room",
+        "isExtraImport": true,
+        "detail": "rentomatic.domain.room",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "MemRepo",
+        "importPath": "rentomatic.repository.mem_repo",
+        "description": "rentomatic.repository.mem_repo",
+        "isExtraImport": true,
+        "detail": "rentomatic.repository.mem_repo",
+        "documentation": {}
+    },
+    {
+        "label": "MemRepo",
+        "importPath": "rentomatic.repository.mem_repo",
+        "description": "rentomatic.repository.mem_repo",
+        "isExtraImport": true,
+        "detail": "rentomatic.repository.mem_repo",
+        "documentation": {}
+    },
+    {
+        "label": "RoomJsonEncoder",
+        "importPath": "rentomatic.serializers.room",
+        "description": "rentomatic.serializers.room",
+        "isExtraImport": true,
+        "detail": "rentomatic.serializers.room",
+        "documentation": {}
+    },
+    {
+        "label": "mock",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "room_list_use_case",
+        "importPath": "rentomatic.use_cases.room_list",
+        "description": "rentomatic.use_cases.room_list",
+        "isExtraImport": true,
+        "detail": "rentomatic.use_cases.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "room_list_use_case",
+        "importPath": "rentomatic.use_cases.room_list",
+        "description": "rentomatic.use_cases.room_list",
+        "isExtraImport": true,
+        "detail": "rentomatic.use_cases.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "importlib_load_entry_point",
+        "kind": 2,
+        "importPath": "env.Scripts.punch-script",
+        "description": "env.Scripts.punch-script",
+        "peekOfCode": "def importlib_load_entry_point(spec, group, name):\n    dist_name, _, _ = spec.partition('==')\n    matches = (\n        entry_point\n        for entry_point in distribution(dist_name).entry_points\n        if entry_point.group == group and entry_point.name == name\n    )\n    return next(matches).load()\nglobals().setdefault('load_entry_point', importlib_load_entry_point)\nif __name__ == '__main__':",
+        "detail": "env.Scripts.punch-script",
+        "documentation": {}
+    },
+    {
+        "label": "__requires__",
+        "kind": 5,
+        "importPath": "env.Scripts.punch-script",
+        "description": "env.Scripts.punch-script",
+        "peekOfCode": "__requires__ = 'punch.py==2.0.0'\ntry:\n    from importlib.metadata import distribution\nexcept ImportError:\n    try:\n        from importlib_metadata import distribution\n    except ImportError:\n        from pkg_resources import load_entry_point\ndef importlib_load_entry_point(spec, group, name):\n    dist_name, _, _ = spec.partition('==')",
+        "detail": "env.Scripts.punch-script",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2html",
+        "description": "env.Scripts.rst2html",
+        "peekOfCode": "description = ('Generates (X)HTML documents from standalone reStructuredText '\n               'sources.  ' + default_description)\npublish_cmdline(writer_name='html', description=description)",
+        "detail": "env.Scripts.rst2html",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2html4",
+        "description": "env.Scripts.rst2html4",
+        "peekOfCode": "description = ('Generates (X)HTML documents from standalone reStructuredText '\n               'sources.  ' + default_description)\npublish_cmdline(writer_name='html4', description=description)",
+        "detail": "env.Scripts.rst2html4",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2html5",
+        "description": "env.Scripts.rst2html5",
+        "peekOfCode": "description = ('Generates HTML5 documents from standalone '\n               'reStructuredText sources.\\n'\n               + default_description)\npublish_cmdline(writer_name='html5', description=description)",
+        "detail": "env.Scripts.rst2html5",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2latex",
+        "description": "env.Scripts.rst2latex",
+        "peekOfCode": "description = ('Generates LaTeX documents from standalone reStructuredText '\n               'sources. '\n               'Reads from <source> (default is stdin) and writes to '\n               '<destination> (default is stdout).  See '\n               '<https://docutils.sourceforge.io/docs/user/latex.html> for '\n               'the full reference.')\npublish_cmdline(writer_name='latex', description=description)",
+        "detail": "env.Scripts.rst2latex",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2man",
+        "description": "env.Scripts.rst2man",
+        "peekOfCode": "description = (\"Generates plain unix manual documents.  \"\n               + default_description)\npublish_cmdline(writer=manpage.Writer(), description=description)",
+        "detail": "env.Scripts.rst2man",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2odt",
+        "description": "env.Scripts.rst2odt",
+        "peekOfCode": "description = ('Generates OpenDocument/OpenOffice/ODF documents from '\n               'standalone reStructuredText sources.  ' + default_description)\nwriter = Writer()\nreader = Reader()\noutput = publish_cmdline_to_binary(reader=reader, writer=writer,\n                                   description=description)",
+        "detail": "env.Scripts.rst2odt",
+        "documentation": {}
+    },
+    {
+        "label": "writer",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2odt",
+        "description": "env.Scripts.rst2odt",
+        "peekOfCode": "writer = Writer()\nreader = Reader()\noutput = publish_cmdline_to_binary(reader=reader, writer=writer,\n                                   description=description)",
+        "detail": "env.Scripts.rst2odt",
+        "documentation": {}
+    },
+    {
+        "label": "reader",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2odt",
+        "description": "env.Scripts.rst2odt",
+        "peekOfCode": "reader = Reader()\noutput = publish_cmdline_to_binary(reader=reader, writer=writer,\n                                   description=description)",
+        "detail": "env.Scripts.rst2odt",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2odt",
+        "description": "env.Scripts.rst2odt",
+        "peekOfCode": "output = publish_cmdline_to_binary(reader=reader, writer=writer,\n                                   description=description)",
+        "detail": "env.Scripts.rst2odt",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2pseudoxml",
+        "description": "env.Scripts.rst2pseudoxml",
+        "peekOfCode": "description = ('Generates pseudo-XML from standalone reStructuredText '\n               'sources (for testing purposes).  ' + default_description)\npublish_cmdline(description=description)",
+        "detail": "env.Scripts.rst2pseudoxml",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2s5",
+        "description": "env.Scripts.rst2s5",
+        "peekOfCode": "description = ('Generates S5 (X)HTML slideshow documents from standalone '\n               'reStructuredText sources.  ' + default_description)\npublish_cmdline(writer_name='s5', description=description)",
+        "detail": "env.Scripts.rst2s5",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2xetex",
+        "description": "env.Scripts.rst2xetex",
+        "peekOfCode": "description = ('Generates LaTeX documents from standalone reStructuredText '\n               'sources for compilation with the Unicode-aware TeX variants '\n               'XeLaTeX or LuaLaTeX. '\n               'Reads from <source> (default is stdin) and writes to '\n               '<destination> (default is stdout).  See '\n               '<https://docutils.sourceforge.io/docs/user/latex.html> for '\n               'the full reference.')\npublish_cmdline(writer_name='xetex', description=description)",
+        "detail": "env.Scripts.rst2xetex",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rst2xml",
+        "description": "env.Scripts.rst2xml",
+        "peekOfCode": "description = ('Generates Docutils-native XML from standalone '\n               'reStructuredText sources.  ' + default_description)\npublish_cmdline(writer_name='xml', description=description)",
+        "detail": "env.Scripts.rst2xml",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "env.Scripts.rstpep2html",
+        "description": "env.Scripts.rstpep2html",
+        "peekOfCode": "description = ('Generates (X)HTML from reStructuredText-format PEP files.  '\n               + default_description)\npublish_cmdline(reader_name='pep', writer_name='pep_html',\n                description=description)",
+        "detail": "env.Scripts.rstpep2html",
+        "documentation": {}
+    },
+    {
+        "label": "Room",
+        "kind": 6,
+        "importPath": "rentomatic.domain.room",
+        "description": "rentomatic.domain.room",
+        "peekOfCode": "class Room:\n    code: uuid.UUID\n    size: int\n    price: int\n    longitude: float\n    latitude: float\n    @classmethod\n    def from_dict(cls, dictionary: dict):\n        return cls(**dictionary)\n    def to_dict(self):",
+        "detail": "rentomatic.domain.room",
+        "documentation": {}
+    },
+    {
+        "label": "MemRepo",
+        "kind": 6,
+        "importPath": "rentomatic.repository.mem_repo",
+        "description": "rentomatic.repository.mem_repo",
+        "peekOfCode": "class MemRepo:\n    def __init__(self, data):\n        self.data = data\n    def list(self):\n        return [Room.from_dict(i) for i in self.data]",
+        "detail": "rentomatic.repository.mem_repo",
+        "documentation": {}
+    },
+    {
+        "label": "RoomJsonEncoder",
+        "kind": 6,
+        "importPath": "rentomatic.serializers.room",
+        "description": "rentomatic.serializers.room",
+        "peekOfCode": "class RoomJsonEncoder(json.JSONEncoder):\n    def default(self, o):\n        try:\n            to_serialize = {\n                \"code\": str(o.code),\n                \"size\": o.size,\n                \"price\": o.price,\n                \"longitude\": o.longitude,\n                \"latitude\": o.latitude,\n            }",
+        "detail": "rentomatic.serializers.room",
+        "documentation": {}
+    },
+    {
+        "label": "room_list_use_case",
+        "kind": 2,
+        "importPath": "rentomatic.use_cases.room_list",
+        "description": "rentomatic.use_cases.room_list",
+        "peekOfCode": "def room_list_use_case(repo):\n    return repo.list()",
+        "detail": "rentomatic.use_cases.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "test_room_model_init",
+        "kind": 2,
+        "importPath": "tests.domain.test_room",
+        "description": "tests.domain.test_room",
+        "peekOfCode": "def test_room_model_init():\n    code: uuid.UUID = uuid.uuid4()\n    room = Room(\n        code,\n        size=200,\n        price=10,\n        longitude=-0.09998975,\n        latitude=51.75436293,\n    )\n    assert room.code == code",
+        "detail": "tests.domain.test_room",
+        "documentation": {}
+    },
+    {
+        "label": "test_room_model_from_dict",
+        "kind": 2,
+        "importPath": "tests.domain.test_room",
+        "description": "tests.domain.test_room",
+        "peekOfCode": "def test_room_model_from_dict():\n    code: uuid.UUID = uuid.uuid4()\n    room = Room.from_dict(\n        {\n            \"code\": code,\n            \"size\": 200,\n            \"price\": 10,\n            \"longitude\": -0.09998975,\n            \"latitude\": 51.75436293,\n        }",
+        "detail": "tests.domain.test_room",
+        "documentation": {}
+    },
+    {
+        "label": "test_room_model_to_dict",
+        "kind": 2,
+        "importPath": "tests.domain.test_room",
+        "description": "tests.domain.test_room",
+        "peekOfCode": "def test_room_model_to_dict():\n    init_dict = {\n        \"code\": uuid.uuid4(),\n        \"size\": 200,\n        \"price\": 10,\n        \"longitude\": -0.09998975,\n        \"latitude\": 51.75436293,\n    }\n    room = Room.from_dict(init_dict)\n    assert room.to_dict() == init_dict",
+        "detail": "tests.domain.test_room",
+        "documentation": {}
+    },
+    {
+        "label": "test_room_model_comparison",
+        "kind": 2,
+        "importPath": "tests.domain.test_room",
+        "description": "tests.domain.test_room",
+        "peekOfCode": "def test_room_model_comparison():\n    init_dict = {\n        \"code\": uuid.uuid4(),\n        \"size\": 200,\n        \"price\": 10,\n        \"longitude\": -0.09998975,\n        \"latitude\": 51.75436293    \n    }\n    room1 = Room.from_dict(init_dict)\n    room2 = Room.from_dict(init_dict)",
+        "detail": "tests.domain.test_room",
+        "documentation": {}
+    },
+    {
+        "label": "room_dicts",
+        "kind": 2,
+        "importPath": "tests.repository.test_mem_repo",
+        "description": "tests.repository.test_mem_repo",
+        "peekOfCode": "def room_dicts():\n    return [\n        {\n            \"code\": \"f853578c-fc0f-4e65-81b8-566c5dffa35a\",\n            \"size\": 215,\n            \"price\": 39,\n            \"longitude\": -0.09998975,\n            \"latitude\": 51.75436293,\n        },\n        {",
+        "detail": "tests.repository.test_mem_repo",
+        "documentation": {}
+    },
+    {
+        "label": "test_repository_list_without_parameters",
+        "kind": 2,
+        "importPath": "tests.repository.test_mem_repo",
+        "description": "tests.repository.test_mem_repo",
+        "peekOfCode": "def test_repository_list_without_parameters(room_dicts):\n    repo = MemRepo(room_dicts)\n    rooms = [Room.from_dict(i) for i in room_dicts]\n    assert repo.list() == rooms",
+        "detail": "tests.repository.test_mem_repo",
+        "documentation": {}
+    },
+    {
+        "label": "test_serialize_domain_room",
+        "kind": 2,
+        "importPath": "tests.serializers.test_room",
+        "description": "tests.serializers.test_room",
+        "peekOfCode": "def test_serialize_domain_room():\n    code: uuid.UUID = uuid.uuid4()\n    room = Room(\n        code,\n        size=200,\n        price=10,\n        longitude=-0.09998975,\n        latitude=51.75436293,\n    )\n    expected_json = f\"\"\"{{ ",
+        "detail": "tests.serializers.test_room",
+        "documentation": {}
+    },
+    {
+        "label": "domain_rooms",
+        "kind": 2,
+        "importPath": "tests.use_cases.test_room_list",
+        "description": "tests.use_cases.test_room_list",
+        "peekOfCode": "def domain_rooms():\n    room_1 = Room(\n        code=uuid.uuid4(),\n        size=215,\n        price=39,\n        longitude=-0.09998975,\n        latitude=51.75436293,\n    )\n    room_2 = Room(\n        code=uuid.uuid4(),",
+        "detail": "tests.use_cases.test_room_list",
+        "documentation": {}
+    },
+    {
+        "label": "test_room_list_without_parameters",
+        "kind": 2,
+        "importPath": "tests.use_cases.test_room_list",
+        "description": "tests.use_cases.test_room_list",
+        "peekOfCode": "def test_room_list_without_parameters(domain_rooms):\n    repo = mock.Mock()\n    repo.list.return_value = domain_rooms\n    result = room_list_use_case(repo)\n    repo.list.assert_called_with()\n    assert result == domain_rooms",
+        "detail": "tests.use_cases.test_room_list",
+        "documentation": {}
+    },
+    {
+        "label": "rooms",
+        "kind": 5,
+        "importPath": "cli",
+        "description": "cli",
+        "peekOfCode": "rooms = [\n    {\n        \"code\": \"f853578c-fc0f-4e65-81b8-566c5dffa35a\",\n        \"size\": 215,\n        \"price\": 39,\n        \"longitude\": -0.09998975,\n        \"latitude\": 51.75436293,\n    },\n    {\n        \"code\": \"fe2c3195-aeff-487a-a08f-e0bdc0ec6e9a\",",
+        "detail": "cli",
+        "documentation": {}
+    },
+    {
+        "label": "repo",
+        "kind": 5,
+        "importPath": "cli",
+        "description": "cli",
+        "peekOfCode": "repo = MemRepo(rooms)\nresult = room_list_use_case(repo)\nprint(result)",
+        "detail": "cli",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "cli",
+        "description": "cli",
+        "peekOfCode": "result = room_list_use_case(repo)\nprint(result)",
+        "detail": "cli",
+        "documentation": {}
+    }
+]

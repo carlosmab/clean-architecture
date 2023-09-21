@@ -1,0 +1,28 @@
+import json
+import uuid
+
+from rentomatic.domain.room import Room
+from rentomatic.serializers.room import RoomJsonEncoder
+
+def test_serialize_domain_room():
+    code: uuid.UUID = uuid.uuid4()
+    
+    room = Room(
+        code,
+        size=200,
+        price=10,
+        longitude=-0.09998975,
+        latitude=51.75436293,
+    )
+    
+    expected_json = f"""{{ 
+        "code": "{code}",
+        "size": 200,
+        "price": 10,
+        "longitude": -0.09998975,
+        "latitude": 51.75436293
+    }}"""
+    
+    serialized = json.dumps(room, cls=RoomJsonEncoder)
+    
+    assert json.loads(serialized) == json.loads(expected_json)

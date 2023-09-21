@@ -10,6 +10,41 @@ You can download the book [here](https://leanpub.com/clean-architectures-in-pyth
 
 The repository contains the **code for the second edition** of the book. If for some reasons you are still following the first edition you can find the code in the branch `first-edition`. The tags mentioned in the first edition still exists in that branch.
 
+## Configure test environment
 
+- In terminal use "python -m pytest"
+  - In VS code Testing extension
+    - Create .env file in root folder with PYTHONPATH (root folder path) var
+    - Modify .vscode/settings.json file
 
-use python -m pytest
+      ```
+        {
+          "python.testing.pytestArgs": [
+            "-svv"
+          ],
+          "python.testing.unittestEnabled": false,
+          "python.testing.pytestEnabled": true,
+          "python.envFile": "${workspaceFolder}/.env"
+        }
+      ```
+
+## Implementation
+
+  1. Implementing Domain
+      Domain: "Business language reflect in code"
+      using dataclass and json.JSONEncoder
+
+      1.1 Entities
+        - Test if Room object can be created
+        - Test if Room object can be created from dictionary
+        - Test if dict can be created from Room object
+        - Test if Room object can json serialized
+
+  2. Implementing Use Cases
+      Using pytest.fixture and unittest.mock
+      2.1 List
+        - Test if room's list can be retrieved
+
+  3. Implementing Repository
+      3.1 Repo list
+        - Test if repo returns data as a list of Rooms
