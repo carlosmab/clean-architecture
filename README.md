@@ -48,3 +48,10 @@ The repository contains the **code for the second edition** of the book. If for 
   3. Implementing Repository
       3.1 Repo list
         - Test if repo returns data as a list of Rooms
+
+  4. Implementing HTTP endpoint
+      4.1 Get room list
+        - Test if endpoint returns a list of Rooms
+
+      4.2 Creating WSGI
+        - wsgi.py

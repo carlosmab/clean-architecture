@@ -1,5 +1,119 @@
 [
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "MemRepo",
+        "importPath": "rentomatic.repository.mem_repo",
+        "description": "rentomatic.repository.mem_repo",
+        "isExtraImport": true,
+        "detail": "rentomatic.repository.mem_repo",
+        "documentation": {}
+    },
+    {
+        "label": "MemRepo",
+        "importPath": "rentomatic.repository.mem_repo",
+        "description": "rentomatic.repository.mem_repo",
+        "isExtraImport": true,
+        "detail": "rentomatic.repository.mem_repo",
+        "documentation": {}
+    },
+    {
+        "label": "MemRepo",
+        "importPath": "rentomatic.repository.mem_repo",
+        "description": "rentomatic.repository.mem_repo",
+        "isExtraImport": true,
+        "detail": "rentomatic.repository.mem_repo",
+        "documentation": {}
+    },
+    {
+        "label": "room_list_use_case",
+        "importPath": "rentomatic.use_cases.room_list",
+        "description": "rentomatic.use_cases.room_list",
+        "isExtraImport": true,
+        "detail": "rentomatic.use_cases.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "room_list_use_case",
+        "importPath": "rentomatic.use_cases.room_list",
+        "description": "rentomatic.use_cases.room_list",
+        "isExtraImport": true,
+        "detail": "rentomatic.use_cases.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "room_list_use_case",
+        "importPath": "rentomatic.use_cases.room_list",
+        "description": "rentomatic.use_cases.room_list",
+        "isExtraImport": true,
+        "detail": "rentomatic.use_cases.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "RoomJsonEncoder",
+        "importPath": "rentomatic.serializers.room",
+        "description": "rentomatic.serializers.room",
+        "isExtraImport": true,
+        "detail": "rentomatic.serializers.room",
+        "documentation": {}
+    },
+    {
+        "label": "RoomJsonEncoder",
+        "importPath": "rentomatic.serializers.room",
+        "description": "rentomatic.serializers.room",
+        "isExtraImport": true,
+        "detail": "rentomatic.serializers.room",
+        "documentation": {}
+    },
+    {
+        "label": "room",
+        "importPath": "application.rest",
+        "description": "application.rest",
+        "isExtraImport": true,
+        "detail": "application.rest",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -292,12 +406,11 @@
         "documentation": {}
     },
     {
-        "label": "json",
-        "kind": 6,
+        "label": "Room",
+        "importPath": "rentomatic.domain.room",
+        "description": "rentomatic.domain.room",
         "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
+        "detail": "rentomatic.domain.room",
         "documentation": {}
     },
     {
@@ -310,27 +423,11 @@
         "documentation": {}
     },
     {
-        "label": "MemRepo",
-        "importPath": "rentomatic.repository.mem_repo",
-        "description": "rentomatic.repository.mem_repo",
+        "label": "mock",
+        "importPath": "unittest",
+        "description": "unittest",
         "isExtraImport": true,
-        "detail": "rentomatic.repository.mem_repo",
-        "documentation": {}
-    },
-    {
-        "label": "MemRepo",
-        "importPath": "rentomatic.repository.mem_repo",
-        "description": "rentomatic.repository.mem_repo",
-        "isExtraImport": true,
-        "detail": "rentomatic.repository.mem_repo",
-        "documentation": {}
-    },
-    {
-        "label": "RoomJsonEncoder",
-        "importPath": "rentomatic.serializers.room",
-        "description": "rentomatic.serializers.room",
-        "isExtraImport": true,
-        "detail": "rentomatic.serializers.room",
+        "detail": "unittest",
         "documentation": {}
     },
     {
@@ -342,19 +439,100 @@
         "documentation": {}
     },
     {
-        "label": "room_list_use_case",
-        "importPath": "rentomatic.use_cases.room_list",
-        "description": "rentomatic.use_cases.room_list",
+        "label": "create_app",
+        "importPath": "application.app",
+        "description": "application.app",
         "isExtraImport": true,
-        "detail": "rentomatic.use_cases.room_list",
+        "detail": "application.app",
         "documentation": {}
     },
     {
-        "label": "room_list_use_case",
-        "importPath": "rentomatic.use_cases.room_list",
-        "description": "rentomatic.use_cases.room_list",
+        "label": "create_app",
+        "importPath": "application.app",
+        "description": "application.app",
         "isExtraImport": true,
-        "detail": "rentomatic.use_cases.room_list",
+        "detail": "application.app",
+        "documentation": {}
+    },
+    {
+        "label": "room_list",
+        "kind": 2,
+        "importPath": "application.rest.room",
+        "description": "application.rest.room",
+        "peekOfCode": "def room_list():\n    repo = MemRepo(rooms)\n    result = room_list_use_case(repo)\n    return Response(\n        json.dumps(result, cls=RoomJsonEncoder), \n        status=200, \n        mimetype=\"application/json\"\n    )",
+        "detail": "application.rest.room",
+        "documentation": {}
+    },
+    {
+        "label": "blueprint",
+        "kind": 5,
+        "importPath": "application.rest.room",
+        "description": "application.rest.room",
+        "peekOfCode": "blueprint = Blueprint(\"room\", __name__)\nrooms = [\n    {\n        \"code\": \"f853578c-fc0f-4e65-81b8-566c5dffa35a\",\n        \"size\": 215,\n        \"price\": 39,\n        \"longitude\": -0.09998975,\n        \"latitude\": 51.75436293,\n    },\n    {",
+        "detail": "application.rest.room",
+        "documentation": {}
+    },
+    {
+        "label": "rooms",
+        "kind": 5,
+        "importPath": "application.rest.room",
+        "description": "application.rest.room",
+        "peekOfCode": "rooms = [\n    {\n        \"code\": \"f853578c-fc0f-4e65-81b8-566c5dffa35a\",\n        \"size\": 215,\n        \"price\": 39,\n        \"longitude\": -0.09998975,\n        \"latitude\": 51.75436293,\n    },\n    {\n        \"code\": \"fe2c3195-aeff-487a-a08f-e0bdc0ec6e9a\",",
+        "detail": "application.rest.room",
+        "documentation": {}
+    },
+    {
+        "label": "create_app",
+        "kind": 2,
+        "importPath": "application.app",
+        "description": "application.app",
+        "peekOfCode": "def create_app(config_name):\n    app = Flask(__name__)\n    config_module = f\"application.config.{config_name.capitalize()}Config\"\n    app.config.from_object(config_module)\n    app.register_blueprint(room.blueprint)\n    return app",
+        "detail": "application.app",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultConfig",
+        "kind": 6,
+        "importPath": "application.config",
+        "description": "application.config",
+        "peekOfCode": "class DefaultConfig:\n    \"\"\"Base config\"\"\"\nclass ProductionConfig(DefaultConfig):\n    \"\"\"Production config\"\"\"\n    pass\nclass DevelopmentConfig(DefaultConfig):\n    \"\"\"Development config\"\"\"\n    pass\nclass TestingConfig(DefaultConfig):\n    \"\"\"Test config\"\"\"",
+        "detail": "application.config",
+        "documentation": {}
+    },
+    {
+        "label": "ProductionConfig",
+        "kind": 6,
+        "importPath": "application.config",
+        "description": "application.config",
+        "peekOfCode": "class ProductionConfig(DefaultConfig):\n    \"\"\"Production config\"\"\"\n    pass\nclass DevelopmentConfig(DefaultConfig):\n    \"\"\"Development config\"\"\"\n    pass\nclass TestingConfig(DefaultConfig):\n    \"\"\"Test config\"\"\"\n    pass\n    TESTING = True",
+        "detail": "application.config",
+        "documentation": {}
+    },
+    {
+        "label": "DevelopmentConfig",
+        "kind": 6,
+        "importPath": "application.config",
+        "description": "application.config",
+        "peekOfCode": "class DevelopmentConfig(DefaultConfig):\n    \"\"\"Development config\"\"\"\n    pass\nclass TestingConfig(DefaultConfig):\n    \"\"\"Test config\"\"\"\n    pass\n    TESTING = True",
+        "detail": "application.config",
+        "documentation": {}
+    },
+    {
+        "label": "TestingConfig",
+        "kind": 6,
+        "importPath": "application.config",
+        "description": "application.config",
+        "peekOfCode": "class TestingConfig(DefaultConfig):\n    \"\"\"Test config\"\"\"\n    pass\n    TESTING = True",
+        "detail": "application.config",
+        "documentation": {}
+    },
+    {
+        "label": "basedir",
+        "kind": 5,
+        "importPath": "application.config",
+        "description": "application.config",
+        "peekOfCode": "basedir = os.path.abspath(os.path.dirname(__file__))\nclass DefaultConfig:\n    \"\"\"Base config\"\"\"\nclass ProductionConfig(DefaultConfig):\n    \"\"\"Production config\"\"\"\n    pass\nclass DevelopmentConfig(DefaultConfig):\n    \"\"\"Development config\"\"\"\n    pass\nclass TestingConfig(DefaultConfig):",
+        "detail": "application.config",
         "documentation": {}
     },
     {
@@ -592,6 +770,33 @@
         "documentation": {}
     },
     {
+        "label": "test_get_rooms",
+        "kind": 2,
+        "importPath": "tests.rest.test_room",
+        "description": "tests.rest.test_room",
+        "peekOfCode": "def test_get_rooms(mock_use_case, client):\n    mock_use_case.return_value = rooms\n    http_response = client.get(\"/rooms\")\n    assert json.loads(http_response.data.decode(\"UTF-8\")) == [room_dict]\n    mock_use_case.assert_called()\n    assert http_response.status_code == 200\n    assert http_response.mimetype == \"application/json\"",
+        "detail": "tests.rest.test_room",
+        "documentation": {}
+    },
+    {
+        "label": "room_dict",
+        "kind": 5,
+        "importPath": "tests.rest.test_room",
+        "description": "tests.rest.test_room",
+        "peekOfCode": "room_dict = {\n    \"code\": \"3251a5bd-86be-428d-8ae9-6e51a8048c33\",\n    \"size\": 200,\n    \"price\": 10,\n    \"longitude\": -0.09998975,\n    \"latitude\": 51.75436293,\n}\nrooms = [Room.from_dict(room_dict)]\n@mock.patch(\"application.rest.room.room_list_use_case\")\ndef test_get_rooms(mock_use_case, client):",
+        "detail": "tests.rest.test_room",
+        "documentation": {}
+    },
+    {
+        "label": "rooms",
+        "kind": 5,
+        "importPath": "tests.rest.test_room",
+        "description": "tests.rest.test_room",
+        "peekOfCode": "rooms = [Room.from_dict(room_dict)]\n@mock.patch(\"application.rest.room.room_list_use_case\")\ndef test_get_rooms(mock_use_case, client):\n    mock_use_case.return_value = rooms\n    http_response = client.get(\"/rooms\")\n    assert json.loads(http_response.data.decode(\"UTF-8\")) == [room_dict]\n    mock_use_case.assert_called()\n    assert http_response.status_code == 200\n    assert http_response.mimetype == \"application/json\"",
+        "detail": "tests.rest.test_room",
+        "documentation": {}
+    },
+    {
         "label": "test_serialize_domain_room",
         "kind": 2,
         "importPath": "tests.serializers.test_room",
@@ -619,6 +824,15 @@
         "documentation": {}
     },
     {
+        "label": "app",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def app():\n    app = create_app(\"testing\")\n    return app",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
         "label": "rooms",
         "kind": 5,
         "importPath": "cli",
@@ -643,6 +857,15 @@
         "description": "cli",
         "peekOfCode": "result = room_list_use_case(repo)\nprint(result)",
         "detail": "cli",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "wsgi",
+        "description": "wsgi",
+        "peekOfCode": "app = create_app(os.environ.get('FLASK_CONFIG') or 'default')",
+        "detail": "wsgi",
         "documentation": {}
     }
 ]
