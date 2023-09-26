@@ -414,6 +414,30 @@
         "documentation": {}
     },
     {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "Mapping",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
         "label": "ResponseSuccess",
         "importPath": "rentomatic.responses",
         "description": "rentomatic.responses",
@@ -439,7 +463,7 @@
         "documentation": {}
     },
     {
-        "label": "RoomListRequest",
+        "label": "build_room_list_request",
         "importPath": "rentomatic.requests.room_list",
         "description": "rentomatic.requests.room_list",
         "isExtraImport": true,
@@ -734,7 +758,34 @@
         "kind": 6,
         "importPath": "rentomatic.requests.room_list",
         "description": "rentomatic.requests.room_list",
-        "peekOfCode": "class RoomListRequest:\n    @classmethod\n    def from_dict(cls, adict):\n        return cls\n    def __bool__(self):\n        return True",
+        "peekOfCode": "class RoomListRequest(ABC):\n    filters: dict | None = None\n    errors: list[dict] = []\n    @abstractmethod\n    def has_errors(self) -> bool:\n        pass\nclass RoomListValidRequest(RoomListRequest):\n    def __init__(self, filters: dict | None = None) -> None:\n        self.filters = filters\n    def has_errors(self) -> bool:",
+        "detail": "rentomatic.requests.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "RoomListValidRequest",
+        "kind": 6,
+        "importPath": "rentomatic.requests.room_list",
+        "description": "rentomatic.requests.room_list",
+        "peekOfCode": "class RoomListValidRequest(RoomListRequest):\n    def __init__(self, filters: dict | None = None) -> None:\n        self.filters = filters\n    def has_errors(self) -> bool:\n        return False\n    def __bool__(self) -> bool:\n        return True\nclass RoomListInvalidRequest(RoomListRequest):\n    def __init__(self, filters: dict | None = None) -> None:\n        self.filters = filters",
+        "detail": "rentomatic.requests.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "RoomListInvalidRequest",
+        "kind": 6,
+        "importPath": "rentomatic.requests.room_list",
+        "description": "rentomatic.requests.room_list",
+        "peekOfCode": "class RoomListInvalidRequest(RoomListRequest):\n    def __init__(self, filters: dict | None = None) -> None:\n        self.filters = filters\n        self.errors = []\n        self.errors.append({\"parameter\": \"filters\"})\n    def add_error(self, parameter, message):\n        self.errors.append({\"parameter\": parameter, \"message\": message})\n    def __bool__(self) -> bool:\n        return False\n    def has_errors(self) -> bool:",
+        "detail": "rentomatic.requests.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "build_room_list_request",
+        "kind": 2,
+        "importPath": "rentomatic.requests.room_list",
+        "description": "rentomatic.requests.room_list",
+        "peekOfCode": "def build_room_list_request(filters: dict | None = None) -> RoomListRequest:\n    accepted_filters = [\"code__eq\", \"price__eq\", \"price__lt\", \"price__gt\"]\n    if filters is not None:\n        invalid_request = RoomListInvalidRequest()\n        if not isinstance(filters, Mapping):\n            invalid_request.add_error(\"filters\", \"Is not an iterable\")\n            return invalid_request\n        for key, value in filters.items():\n            if key not in accepted_filters:\n                invalid_request.add_error(\"filters\", f\"Invalid filter key: {key}\")",
         "detail": "rentomatic.requests.room_list",
         "documentation": {}
     },
@@ -824,16 +875,52 @@
         "kind": 2,
         "importPath": "tests.requests.test_room_list",
         "description": "tests.requests.test_room_list",
-        "peekOfCode": "def test_build_room_list_request_without_parameters():\n    request = RoomListRequest()\n    assert bool(request) is True\ndef test_build_room_list_request_from_empty_dict():\n    request = RoomListRequest.from_dict({})\n    assert bool(request) is True",
+        "peekOfCode": "def test_build_room_list_request_without_parameters():\n    request = build_room_list_request()\n    assert request.filters is None\n    assert bool(request) is True\ndef test_build_room_list_request_from_empty_filters():\n    request = build_room_list_request({})\n    assert request.filters == {}\n    assert bool(request) is True\ndef test_build_room_list_request_with_invalid_filter_parameter():\n    request = build_room_list_request(filters=5)",
         "detail": "tests.requests.test_room_list",
         "documentation": {}
     },
     {
-        "label": "test_build_room_list_request_from_empty_dict",
+        "label": "test_build_room_list_request_from_empty_filters",
         "kind": 2,
         "importPath": "tests.requests.test_room_list",
         "description": "tests.requests.test_room_list",
-        "peekOfCode": "def test_build_room_list_request_from_empty_dict():\n    request = RoomListRequest.from_dict({})\n    assert bool(request) is True",
+        "peekOfCode": "def test_build_room_list_request_from_empty_filters():\n    request = build_room_list_request({})\n    assert request.filters == {}\n    assert bool(request) is True\ndef test_build_room_list_request_with_invalid_filter_parameter():\n    request = build_room_list_request(filters=5)\n    assert request.has_errors()\n    assert request.errors[0][\"parameter\"] == \"filters\"\n    assert bool(request) is False\ndef test_build_room_list_request_with_incorrect_filter_keys():",
+        "detail": "tests.requests.test_room_list",
+        "documentation": {}
+    },
+    {
+        "label": "test_build_room_list_request_with_invalid_filter_parameter",
+        "kind": 2,
+        "importPath": "tests.requests.test_room_list",
+        "description": "tests.requests.test_room_list",
+        "peekOfCode": "def test_build_room_list_request_with_invalid_filter_parameter():\n    request = build_room_list_request(filters=5)\n    assert request.has_errors()\n    assert request.errors[0][\"parameter\"] == \"filters\"\n    assert bool(request) is False\ndef test_build_room_list_request_with_incorrect_filter_keys():\n    request = build_room_list_request(filters= {\"a\": 1})\n    assert request.has_errors()\n    assert request.errors[0][\"parameter\"] == \"filters\"\n    assert bool(request) is False",
+        "detail": "tests.requests.test_room_list",
+        "documentation": {}
+    },
+    {
+        "label": "test_build_room_list_request_with_incorrect_filter_keys",
+        "kind": 2,
+        "importPath": "tests.requests.test_room_list",
+        "description": "tests.requests.test_room_list",
+        "peekOfCode": "def test_build_room_list_request_with_incorrect_filter_keys():\n    request = build_room_list_request(filters= {\"a\": 1})\n    assert request.has_errors()\n    assert request.errors[0][\"parameter\"] == \"filters\"\n    assert bool(request) is False\n@pytest.mark.parametrize(\n    \"key\", [\"code__eq\", \"price__eq\", \"price__lt\", \"price__gt\"]\n)\ndef test_build_room_list_request_accepted_filters(key):\n    filters = {key: 1}",
+        "detail": "tests.requests.test_room_list",
+        "documentation": {}
+    },
+    {
+        "label": "test_build_room_list_request_accepted_filters",
+        "kind": 2,
+        "importPath": "tests.requests.test_room_list",
+        "description": "tests.requests.test_room_list",
+        "peekOfCode": "def test_build_room_list_request_accepted_filters(key):\n    filters = {key: 1}\n    request = build_room_list_request(filters=filters)\n    assert request.filters == filters\n    assert bool(request) is True\n@pytest.mark.parametrize(\"key\", [\"code__lt\", \"code__gt\"])\ndef test_build_room_list_request_rejected_filters(key):\n    filters = {key: 1}\n    request = build_room_list_request(filters=filters)\n    assert request.has_errors()",
+        "detail": "tests.requests.test_room_list",
+        "documentation": {}
+    },
+    {
+        "label": "test_build_room_list_request_rejected_filters",
+        "kind": 2,
+        "importPath": "tests.requests.test_room_list",
+        "description": "tests.requests.test_room_list",
+        "peekOfCode": "def test_build_room_list_request_rejected_filters(key):\n    filters = {key: 1}\n    request = build_room_list_request(filters=filters)\n    assert request.has_errors()\n    assert request.errors[0][\"parameter\"] == \"filters\"\n    assert bool(request) is False",
         "detail": "tests.requests.test_room_list",
         "documentation": {}
     },
