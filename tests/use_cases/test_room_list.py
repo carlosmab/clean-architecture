@@ -4,6 +4,7 @@ import uuid
 from unittest import mock
 
 from rentomatic.domain.room import Room
+from rentomatic.requests.room_list import RoomListRequest
 from rentomatic.use_cases.room_list import room_list_use_case
 
 
@@ -47,7 +48,11 @@ def test_room_list_without_parameters(domain_rooms):
     repo = mock.Mock()
     repo.list.return_value = domain_rooms
     
-    result = room_list_use_case(repo)
+    request = RoomListRequest()
+    
+    response = room_list_use_case(repo, request)
+    
+    assert bool (response) is True
     
     repo.list.assert_called_with()
-    assert result == domain_rooms
+    assert response.value == domain_rooms

@@ -414,12 +414,44 @@
         "documentation": {}
     },
     {
+        "label": "ResponseSuccess",
+        "importPath": "rentomatic.responses",
+        "description": "rentomatic.responses",
+        "isExtraImport": true,
+        "detail": "rentomatic.responses",
+        "documentation": {}
+    },
+    {
+        "label": "ResponseSuccess",
+        "importPath": "rentomatic.responses",
+        "description": "rentomatic.responses",
+        "isExtraImport": true,
+        "detail": "rentomatic.responses",
+        "documentation": {}
+    },
+    {
         "label": "pytest",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "pytest",
         "description": "pytest",
         "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "RoomListRequest",
+        "importPath": "rentomatic.requests.room_list",
+        "description": "rentomatic.requests.room_list",
+        "isExtraImport": true,
+        "detail": "rentomatic.requests.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "RoomListRequest",
+        "importPath": "rentomatic.requests.room_list",
+        "description": "rentomatic.requests.room_list",
+        "isExtraImport": true,
+        "detail": "rentomatic.requests.room_list",
         "documentation": {}
     },
     {
@@ -698,6 +730,15 @@
         "documentation": {}
     },
     {
+        "label": "RoomListRequest",
+        "kind": 6,
+        "importPath": "rentomatic.requests.room_list",
+        "description": "rentomatic.requests.room_list",
+        "peekOfCode": "class RoomListRequest:\n    @classmethod\n    def from_dict(cls, adict):\n        return cls\n    def __bool__(self):\n        return True",
+        "detail": "rentomatic.requests.room_list",
+        "documentation": {}
+    },
+    {
         "label": "RoomJsonEncoder",
         "kind": 6,
         "importPath": "rentomatic.serializers.room",
@@ -711,8 +752,17 @@
         "kind": 2,
         "importPath": "rentomatic.use_cases.room_list",
         "description": "rentomatic.use_cases.room_list",
-        "peekOfCode": "def room_list_use_case(repo):\n    return repo.list()",
+        "peekOfCode": "def room_list_use_case(repo, request):\n    rooms = repo.list()\n    return ResponseSuccess(rooms)",
         "detail": "rentomatic.use_cases.room_list",
+        "documentation": {}
+    },
+    {
+        "label": "ResponseSuccess",
+        "kind": 6,
+        "importPath": "rentomatic.responses",
+        "description": "rentomatic.responses",
+        "peekOfCode": "class ResponseSuccess:\n    def __init__(self, value=None):\n        self.value = value\n    def __bool__(self):\n        return True",
+        "detail": "rentomatic.responses",
         "documentation": {}
     },
     {
@@ -770,6 +820,24 @@
         "documentation": {}
     },
     {
+        "label": "test_build_room_list_request_without_parameters",
+        "kind": 2,
+        "importPath": "tests.requests.test_room_list",
+        "description": "tests.requests.test_room_list",
+        "peekOfCode": "def test_build_room_list_request_without_parameters():\n    request = RoomListRequest()\n    assert bool(request) is True\ndef test_build_room_list_request_from_empty_dict():\n    request = RoomListRequest.from_dict({})\n    assert bool(request) is True",
+        "detail": "tests.requests.test_room_list",
+        "documentation": {}
+    },
+    {
+        "label": "test_build_room_list_request_from_empty_dict",
+        "kind": 2,
+        "importPath": "tests.requests.test_room_list",
+        "description": "tests.requests.test_room_list",
+        "peekOfCode": "def test_build_room_list_request_from_empty_dict():\n    request = RoomListRequest.from_dict({})\n    assert bool(request) is True",
+        "detail": "tests.requests.test_room_list",
+        "documentation": {}
+    },
+    {
         "label": "test_get_rooms",
         "kind": 2,
         "importPath": "tests.rest.test_room",
@@ -819,7 +887,7 @@
         "kind": 2,
         "importPath": "tests.use_cases.test_room_list",
         "description": "tests.use_cases.test_room_list",
-        "peekOfCode": "def test_room_list_without_parameters(domain_rooms):\n    repo = mock.Mock()\n    repo.list.return_value = domain_rooms\n    result = room_list_use_case(repo)\n    repo.list.assert_called_with()\n    assert result == domain_rooms",
+        "peekOfCode": "def test_room_list_without_parameters(domain_rooms):\n    repo = mock.Mock()\n    repo.list.return_value = domain_rooms\n    request = RoomListRequest()\n    response = room_list_use_case(repo, request)\n    assert bool (response) is True\n    repo.list.assert_called_with()\n    assert response.value == domain_rooms",
         "detail": "tests.use_cases.test_room_list",
         "documentation": {}
     },
@@ -830,6 +898,15 @@
         "description": "tests.conftest",
         "peekOfCode": "def app():\n    app = create_app(\"testing\")\n    return app",
         "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_response_success_is_true",
+        "kind": 2,
+        "importPath": "tests.test_responses",
+        "description": "tests.test_responses",
+        "peekOfCode": "def test_response_success_is_true():\n    assert bool(ResponseSuccess()) is True",
+        "detail": "tests.test_responses",
         "documentation": {}
     },
     {

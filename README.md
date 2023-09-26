@@ -55,3 +55,6 @@ The repository contains the **code for the second edition** of the book. If for 
 
       4.2 Creating WSGI
         - wsgi.py
+
+  5. Implementing requests
+  6. Implementing success response
