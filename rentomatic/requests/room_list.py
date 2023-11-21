@@ -28,8 +28,15 @@ class RoomListInvalidRequest(RoomListRequest):
         self.errors = []
         self.errors.append({"parameter": "filters"})
         
-    
     def add_error(self, parameter, message):
+        """
+        Adds an error message to the list of errors.
+        Parameters:
+            parameter (str): The parameter that caused the error.
+            message (str): The error message.
+        Returns:
+            None
+        """
         self.errors.append({"parameter": parameter, "message": message})
     
     def __bool__(self) -> bool:
@@ -58,6 +65,9 @@ def build_room_list_request(filters: dict | None = None) -> RoomListRequest:
             return invalid_request
     
     return RoomListValidRequest(filters)
+
+
+
     
 
     
