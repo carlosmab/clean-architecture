@@ -479,6 +479,14 @@
         "documentation": {}
     },
     {
+        "label": "test_build_room_list_request_accepted_filters",
+        "importPath": "tests.requests.test_room_list",
+        "description": "tests.requests.test_room_list",
+        "isExtraImport": true,
+        "detail": "tests.requests.test_room_list",
+        "documentation": {}
+    },
+    {
         "label": "mock",
         "importPath": "unittest",
         "description": "unittest",
@@ -920,7 +928,34 @@
         "kind": 2,
         "importPath": "tests.requests.test_room_list",
         "description": "tests.requests.test_room_list",
-        "peekOfCode": "def test_build_room_list_request_rejected_filters(key):\n    filters = {key: 1}\n    request = build_room_list_request(filters=filters)\n    assert request.has_errors()\n    assert request.errors[0][\"parameter\"] == \"filters\"\n    assert bool(request) is False",
+        "peekOfCode": "def test_build_room_list_request_rejected_filters(key):\n    filters = {key: 1}\n    request = build_room_list_request(filters=filters)\n    assert request.has_errors()\n    assert request.errors[0][\"parameter\"] == \"filters\"\n    assert bool(request) is False\ndef test_build_room_list_request_without_parameters():\n    request = RoomListRequest()\n    assert bool(request) is True\ndef test_build_room_list_request_from_empty_dict():",
+        "detail": "tests.requests.test_room_list",
+        "documentation": {}
+    },
+    {
+        "label": "test_build_room_list_request_without_parameters",
+        "kind": 2,
+        "importPath": "tests.requests.test_room_list",
+        "description": "tests.requests.test_room_list",
+        "peekOfCode": "def test_build_room_list_request_without_parameters():\n    request = RoomListRequest()\n    assert bool(request) is True\ndef test_build_room_list_request_from_empty_dict():\n    request = RoomListRequest.from_dict({})\n    assert bool(request) is True\ndef test_build_room_list_request_from_empty_dict_new():\n    request = RoomListRequest.from_dict({})\n    assert bool(request) is True",
+        "detail": "tests.requests.test_room_list",
+        "documentation": {}
+    },
+    {
+        "label": "test_build_room_list_request_from_empty_dict",
+        "kind": 2,
+        "importPath": "tests.requests.test_room_list",
+        "description": "tests.requests.test_room_list",
+        "peekOfCode": "def test_build_room_list_request_from_empty_dict():\n    request = RoomListRequest.from_dict({})\n    assert bool(request) is True\ndef test_build_room_list_request_from_empty_dict_new():\n    request = RoomListRequest.from_dict({})\n    assert bool(request) is True",
+        "detail": "tests.requests.test_room_list",
+        "documentation": {}
+    },
+    {
+        "label": "test_build_room_list_request_from_empty_dict_new",
+        "kind": 2,
+        "importPath": "tests.requests.test_room_list",
+        "description": "tests.requests.test_room_list",
+        "peekOfCode": "def test_build_room_list_request_from_empty_dict_new():\n    request = RoomListRequest.from_dict({})\n    assert bool(request) is True",
         "detail": "tests.requests.test_room_list",
         "documentation": {}
     },

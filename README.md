@@ -58,3 +58,5 @@ The repository contains the **code for the second edition** of the book. If for 
 
   5. Implementing requests
   6. Implementing success response
+
+  7. Error management
